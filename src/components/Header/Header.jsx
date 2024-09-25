@@ -1,11 +1,24 @@
 
 import React from "react";
+import logo from './logo.png';
+
 
 const Header = () => {
   return (
     <header className="bg-blue-900 text-white py-4">
+      {/* <div className="container mx-auto flex justify-between items-center">
+        <h1 className="text-2xl font-bold">Dhanavardhanam (MSME Credit Access Platform)</h1> */}
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold">MSME Credit Access Platform</h1>
+        {/* Logo */}
+        <img src={logo} alt="Dhanavardhanam Logo" className="h-10" /> {/* Adjust height as needed */}
+        
+        {/* Title */}
+        <h1 className="text-3xl font-extrabold text-zinc-100 tracking-wide">
+          DhanaVardhanam
+        </h1>
+        
+        {/* Tagline */}
+        <p className="text-sm italic text-white-200">MSME Credit Access Platform</p>  
         <nav>
           <ul className="flex space-x-4">
             <li>
